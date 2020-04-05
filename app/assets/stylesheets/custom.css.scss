@@ -1,0 +1,63 @@
+.navbar_contents {
+  margin: 20px auto;
+  width: 1000px;
+}
+
+.top_icon {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.area_search_box {
+  display: inline-block;
+  margin-left: 30px;
+  width: 700px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+.navbar_contens_bottom {
+  margin-top: 20px;
+}
+
+.area_choose_bar_top {
+  display: flex;
+}
+
+.area_choose_bar_top li {
+  list-style-type: none;
+}
+
+.area_choose_bar_top > li {
+  position: relative;
+}
+
+.area_choose_bar_top > li > ul {
+  position: absolute;
+  padding-top: 10px;
+}
+
+.area_choose_bar_top li li {
+  height: 0;
+  overflow: hidden;
+}
+
+.area_choose_bar_top > li > ul {
+  padding-left: 0;
+}
+
+.area_choose_bar_top li:hover > ul > li {
+    height: 2rem;
+    overflow: visible;
+}
+
+.area_choose_bar_top > li > ul > li > ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
