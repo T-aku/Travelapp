@@ -1,0 +1,13 @@
+<div class="country_product_container">
+  <div class="country_product_title">
+    <%= @country.name %>のおみや一覧
+  </div>
+  <div class="products_list">
+    <% @country.products.each do |product| %>
+    <div class="product_parts">
+      <%= product.name %>
+      <p><%= product.comment %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
