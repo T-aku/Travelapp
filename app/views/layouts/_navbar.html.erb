@@ -1,13 +1,11 @@
 <div class="navbar">
   <div class="navbar_contents">
     <div class="navbar_contens_top">
-      <div class="top_icon">おみやさがし</div>
+      <div class="top_icon"><%= link_to 'おみやさがし', root_path %></div>
       <input type="text" class="area_search_box" >
     </div>
     <div class="navbar_contens_bottom">
-      <div class="area_choose_bar">
-        <%= render 'layouts/areacategory' %>
-      </div>
+      <%= render 'layouts/areacategory' %>
     </div>
   </div>
 </div>

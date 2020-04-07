@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :countries
   resources :products
+  resources :sessions
+  resources :users
 end
