@@ -2,9 +2,9 @@
   <div class="navbar_contents">
     <div class="navbar_contens_top">
       <% if !logged_in? %>
-        <div class="top_icon"><%= link_to 'おみやさがし', root_path %></div>
+        <%= link_to 'おみやさがし', root_path, class: "top_icon" %>
       <% else %>
-        <div class="top_icon"><%= link_to 'おみやさがし', users_path %></div>
+        <%= link_to 'おみやさがし', users_path, class: "top_icon" %>
       <% end %>
       <input type="text" class="area_search_box" >
     </div>

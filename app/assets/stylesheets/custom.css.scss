@@ -1,3 +1,7 @@
+.navbar {
+  border-bottom: thin solid black;
+}
+
 .navbar_contents {
   margin: 20px auto;
   width: 1000px;
@@ -7,6 +11,8 @@
   display: inline-block;
   font-weight: bold;
   font-size: 1.2em;
+  text-decoration: none;
+  color: black;
 }
 
 .area_search_box {
@@ -39,6 +45,7 @@
 .area_choose_bar_top > li > ul {
   position: absolute;
   padding-top: 10px;
+  padding-left: 0;
 }
 
 .area_choose_bar_top li li {
@@ -46,22 +53,18 @@
   overflow: hidden;
 }
 
-.area_choose_bar_top > li > ul {
-  padding-left: 0;
-}
-
 .area_choose_bar_top li:hover > ul > li {
-    height: 2rem;
-    overflow: visible;
+  height: 2rem;
+  overflow: visible;
 }
 
 .area_choose_bar_top > li > ul > li > ul {
-    left: 100%;
-    position: absolute;
-    top: 0;
-    width: 200px;
-    padding-top: 10px;
-    padding-left: 30px;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .product_post_button {
@@ -73,12 +76,13 @@
   color: white;
   border-radius: 100px;
   font-size: 1.4em;
+  text-decoration: none;
 }
 
 .country_product_container {
-    margin: 20px auto;
-    width: 1000px;
-    padding-top: 50px;
+  margin: 20px auto;
+  width: 1000px;
+  padding-top: 50px;
 }
 
 .country_product_title {
@@ -113,6 +117,11 @@
   top: 160px;
 }
 
+.product_name a {
+  text-decoration: none;
+  color: black;
+}
+
 .product_comment {
   font-size: 0.8em;
   position: absolute;
@@ -121,18 +130,28 @@
 
 .register_button {
   margin-left: 675px;
-  background-color: #00acee;
+  background-color: #ff7f50;
   color: #fff;
   padding: 7px 10px;
   border-radius: 5px;
 }
 
+.register_button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .login_button {
-  color: #1e90ff;
-  border: thin solid #1e90ff;
+  color: #00acee;
+  border: thin solid #00acee;
   padding: 7px 10px;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+.login_button a {
+  text-decoration: none;
+  color: #00acee;
 }
 
 .logout_button {
@@ -141,6 +160,11 @@
   color: #1e90ff;
   padding: 7px 10px;
   border-radius: 5px;
+}
+
+.logout_button a {
+  text-decoration: none;
+  color: #00acee;
 }
 
 .form_container {
