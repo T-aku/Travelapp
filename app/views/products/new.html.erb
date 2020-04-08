@@ -1,0 +1,23 @@
+<%= form_with model: @product do |f| %>
+  <div class="form_container">
+    <ul class="contents_form">
+      <div>
+        <li><%= f.label :product_name, '商品名' %></li>
+        <li><%= f.text_field :product_name, class: "input_form", placeholder: '(例）はちみつ', autofocus: true %></li>
+      </div>
+      <div>
+        <li><%= f.label :country_name, '国名' %></li>
+        <li><%= f.text_field :country_name, class: "input_form", placeholder: '(例）ギリシャ', autofocus: true %></li>
+      </div>
+      <div>
+        <li><%= f.label :comment, 'コメント' %></li>
+        <li><%= f.text_field :comment, class: "input_form_product_comment", placeholder: '(例）サントリーニ島のはちみつ！！' %></li>
+      </div>
+      <div>
+        <li><%= f.label :image, '商品画像' %></li>
+        <li><%= f.file_field :image %></li>
+      </div>
+      <li><%= f.submit("出品", class: "submit_form") %></li>
+    </ul>
+  </div>
+<% end %>

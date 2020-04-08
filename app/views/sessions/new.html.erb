@@ -1,1 +1,15 @@
-Login page
+<%= form_with scope: :session, url: sessions_path do |f| %>
+  <div class="form_container">
+    <ul class="contents_form">
+      <div>
+        <li><%= f.label :email, 'メールアドレス' %></li>
+        <li><%= f.email_field :email, class: "input_form", placeholder: '(例）shinichi@murata.com' %></li>
+      </div>
+      <div>
+        <li><%= f.label :password, 'パスワード' %></li>
+        <li><%= f.password_field :password, class: "input_form", placeholder: 'XXXXXXXX' %></li>
+      </div>
+      <li><%= f.submit("ログイン", class: "submit_form") %></li>
+    </ul>
+  </div>
+<% end %>

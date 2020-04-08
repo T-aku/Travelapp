@@ -1,7 +1,11 @@
 <div class="navbar">
   <div class="navbar_contents">
     <div class="navbar_contens_top">
-      <div class="top_icon"><%= link_to 'おみやさがし', root_path %></div>
+      <% if !logged_in? %>
+        <div class="top_icon"><%= link_to 'おみやさがし', root_path %></div>
+      <% else %>
+        <div class="top_icon"><%= link_to 'おみやさがし', users_path %></div>
+      <% end %>
       <input type="text" class="area_search_box" >
     </div>
     <div class="navbar_contens_bottom">
