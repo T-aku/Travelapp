@@ -6,7 +6,10 @@
       <% else %>
         <%= link_to 'おみやさがし', users_path, class: "top_icon" %>
       <% end %>
-      <input type="text" class="area_search_box" >
+      <%= form_with scope: :search, url: search_index_path, method: :get, local: true do |f| %>
+        <%= f.text_field :search_content, class: "area_search_box", placeholder: '国名・商品名' %>
+        <%= f.submit("検索", class: "area_search_box_submit") %>
+      <% end %>
     </div>
     <div class="navbar_contens_bottom">
       <%= render 'layouts/areacategory' %>

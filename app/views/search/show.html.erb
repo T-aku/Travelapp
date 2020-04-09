@@ -1,9 +1,9 @@
 <div class="country_product_container">
   <div class="country_product_title">
-    <%= @country.countryname %>のおみや
+    <%= @products[0].productname %>一覧
   </div>
   <div class="products_list">
-    <% @country.products.each do |product| %>
+    <% @products.each do |product| %>
     <div class="product_parts">
       <%= link_to product_path(product) do %>
         <% if !product.image.blank? %>
@@ -14,7 +14,6 @@
       <% end %>
       <p class="product_name"><%= link_to product.productname, product_path(product) %></p>
       <p class="product_comment"><%= product.comment %></p>
-      <p class="product_username">by:&nbsp;<%= product.user.username %></p>
     </div>
     <% end %>
   </div>

@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :products
   resources :sessions
   resources :users
+  resources :search
+  
 end

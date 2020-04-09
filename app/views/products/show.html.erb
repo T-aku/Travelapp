@@ -1,1 +1,21 @@
-show
+<div class="product_show_container">
+  <div class="product_show_name">
+    <%= @product.productname %>
+  </div>
+  <div class="product_show_image">
+    <% if !@product.image.blank? %>
+      <%= image_tag @product.image.url %>
+    <% else %>
+      <%= image_tag 'noimage.jpeg' %>
+    <% end %>
+  </div>
+  <div class="product_offer_button">
+    申し込む
+  </div>
+  <div class="product_show_username">
+    <a><%= @product.user.username %></a>さんから出品されました
+  </div>
+  <div class="product_show_comment">
+    <%= @product.comment %>
+  </div>
+</div>

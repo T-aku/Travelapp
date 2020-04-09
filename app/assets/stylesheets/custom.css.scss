@@ -15,13 +15,23 @@
   color: black;
 }
 
+.navbar_contens_top form {
+  display: inline;
+}
+
 .area_search_box {
-  display: inline-block;
   margin-left: 70px;
-  width: 780px;
+  width: 740px;
   height: 30px;
   border-radius: 3px;
   background-color: #f5f5f5;
+}
+
+.area_search_box_submit {
+  height: 36px;
+  background-color: #00acee;
+  color: white;
+  border-radius: 5px;
 }
 
 .navbar_contens_bottom {
@@ -69,7 +79,7 @@
 
 .product_post_button {
   position: fixed;
-  top: 500px;
+  top: 530px;
   right: 30px;
   background-color: #00acee;
   padding: 75px 70px;
@@ -115,6 +125,25 @@
 .product_name {
   position: absolute;
   top: 160px;
+}
+
+.product_edit {
+  position: absolute;
+  top: 215px;
+  text-decoration: none;
+  padding: 6px 29px;
+  color: #00acee;
+  border-radius: 5px;
+}
+
+.product_destroy {
+  position: absolute;
+  top: 215px;
+  right: 0;
+  text-decoration: none;
+  padding: 6px 29px;
+  color: #ff6347;
+  border-radius: 5px;
 }
 
 .product_name a {
@@ -210,3 +239,67 @@
   margin-top: 5px;
 }
 
+.product_show_container {
+  width: 620px;
+  margin: 40px auto;
+  border: thin solid #d3d3d3;
+  height: 970px;
+}
+
+.product_show_name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-top: 20px;
+}
+
+.product_show_image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product_show_image img {
+  width: 500px;
+  height: 500px;
+}
+
+.product_offer_button {
+  text-align: center;
+  width: 500px;
+  height: 20px;
+  background-color: #00acee;
+  color: white;
+  margin-top: 30px;
+  margin-left: 60px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  font-size: 1.1em;
+  border-radius: 25px;
+}
+
+.product_show_username {
+  margin-left: 60px;
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+
+.product_show_username a {
+  font-weight: bold;
+}
+
+.product_show_comment {
+  height: 150px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  border: thin solid #d3d3d3;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.product_not_found {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}

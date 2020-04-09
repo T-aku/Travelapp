@@ -12,8 +12,9 @@
           <%= image_tag 'noimage.jpeg', class: "product_image" %>
         <% end %>
       <% end %>
-      <p class="product_name"><%= link_to product.name, product_path(product) %></p>
-      <p class="product_comment"><%= product.comment %></p>
+      <p class="product_name"><%= link_to product.productname, product_path(product) %></p>
+      <%= link_to '編集', edit_product_path(product), class: "product_edit" %>
+      <%= link_to '削除', product_path(product), method: :delete, data: { confirm: '削除しますか？' }, class: "product_destroy" %>
     </div>
     <% end %>
   </div>
